@@ -7,7 +7,17 @@
 //
 
 #import "SAJEventModule.h"
+#import <WeexSDK.h>
+
+@interface SAJEventModule()<WXModuleProtocol>
+
+@end
 
 @implementation SAJEventModule
-
+@synthesize weexInstance;
+WX_EXPORT_METHOD_SYNC(@selector(getString))
+//WX_EXPORT_METHOD(@selector(getString))
+- (NSString*)getString{
+    return @"回调返回数据";
+}
 @end

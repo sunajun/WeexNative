@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FEC20F62338013C9F7263BA /* libPods-weexNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62FD29FF9886A8E2B260E0CF /* libPods-weexNative.a */; };
+		8E74A3F5206E37D200B7C6EE /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 8E74A3F4206E37D200B7C6EE /* index.js */; };
 		8EA106A9206203610005D6FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA106A8206203610005D6FE /* AppDelegate.m */; };
 		8EA106AC206203620005D6FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA106AB206203620005D6FE /* ViewController.m */; };
 		8EA106AF206203620005D6FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA106AD206203620005D6FE /* Main.storyboard */; };
 		8EA106B1206203620005D6FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA106B0206203620005D6FE /* Assets.xcassets */; };
 		8EA106B4206203620005D6FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA106B2206203620005D6FE /* LaunchScreen.storyboard */; };
 		8EA106B7206203620005D6FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA106B6206203620005D6FE /* main.m */; };
+		8EA106C42062230A0005D6FE /* SAJImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA106C32062230A0005D6FE /* SAJImageLoader.m */; };
+		8EA106C72062486E0005D6FE /* SAJEventModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA106C62062486E0005D6FE /* SAJEventModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62FD29FF9886A8E2B260E0CF /* libPods-weexNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weexNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6775157DA1FC4441FAAD9CF2 /* Pods-weexNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weexNative.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weexNative/Pods-weexNative.debug.xcconfig"; sourceTree = "<group>"; };
+		88920B4F5FFCD03379EC2275 /* Pods-weexNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weexNative.release.xcconfig"; path = "Pods/Target Support Files/Pods-weexNative/Pods-weexNative.release.xcconfig"; sourceTree = "<group>"; };
+		8E74A3F4206E37D200B7C6EE /* index.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
 		8EA106A4206203600005D6FE /* weexNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weexNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA106A7206203610005D6FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8EA106A8206203610005D6FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +34,10 @@
 		8EA106B3206203620005D6FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EA106B5206203620005D6FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EA106B6206203620005D6FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8EA106C22062230A0005D6FE /* SAJImageLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAJImageLoader.h; sourceTree = "<group>"; };
+		8EA106C32062230A0005D6FE /* SAJImageLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAJImageLoader.m; sourceTree = "<group>"; };
+		8EA106C52062486E0005D6FE /* SAJEventModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAJEventModule.h; sourceTree = "<group>"; };
+		8EA106C62062486E0005D6FE /* SAJEventModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAJEventModule.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FEC20F62338013C9F7263BA /* libPods-weexNative.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +55,11 @@
 		8EA1069B206203600005D6FE = {
 			isa = PBXGroup;
 			children = (
+				8EA106BD2062058F0005D6FE /* bundlejs */,
 				8EA106A6206203600005D6FE /* weexNative */,
 				8EA106A5206203600005D6FE /* Products */,
+				AC261159EC636296E61E003A /* Pods */,
+				D7D8143454E8A2ED511B3516 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,8 +83,37 @@
 				8EA106B2206203620005D6FE /* LaunchScreen.storyboard */,
 				8EA106B5206203620005D6FE /* Info.plist */,
 				8EA106B6206203620005D6FE /* main.m */,
+				8EA106C22062230A0005D6FE /* SAJImageLoader.h */,
+				8EA106C32062230A0005D6FE /* SAJImageLoader.m */,
+				8EA106C52062486E0005D6FE /* SAJEventModule.h */,
+				8EA106C62062486E0005D6FE /* SAJEventModule.m */,
 			);
 			path = weexNative;
+			sourceTree = "<group>";
+		};
+		8EA106BD2062058F0005D6FE /* bundlejs */ = {
+			isa = PBXGroup;
+			children = (
+				8E74A3F4206E37D200B7C6EE /* index.js */,
+			);
+			path = bundlejs;
+			sourceTree = "<group>";
+		};
+		AC261159EC636296E61E003A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6775157DA1FC4441FAAD9CF2 /* Pods-weexNative.debug.xcconfig */,
+				88920B4F5FFCD03379EC2275 /* Pods-weexNative.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D7D8143454E8A2ED511B3516 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62FD29FF9886A8E2B260E0CF /* libPods-weexNative.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EA106BA206203620005D6FE /* Build configuration list for PBXNativeTarget "weexNative" */;
 			buildPhases = (
+				8F8FC3547D23EA90F194D98A /* [CP] Check Pods Manifest.lock */,
 				8EA106A0206203600005D6FE /* Sources */,
 				8EA106A1206203600005D6FE /* Frameworks */,
 				8EA106A2206203600005D6FE /* Resources */,
+				E7E9B7E155A6C548F0DC5341 /* [CP] Embed Pods Frameworks */,
+				8969F419441C6AA04ADEAB00 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -102,7 +150,7 @@
 				TargetAttributes = {
 					8EA106A3206203600005D6FE = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -132,10 +180,67 @@
 				8EA106B4206203620005D6FE /* LaunchScreen.storyboard in Resources */,
 				8EA106B1206203620005D6FE /* Assets.xcassets in Resources */,
 				8EA106AF206203620005D6FE /* Main.storyboard in Resources */,
+				8E74A3F5206E37D200B7C6EE /* index.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8969F419441C6AA04ADEAB00 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-weexNative/Pods-weexNative-resources.sh",
+				"${PODS_ROOT}/WeexSDK/pre-build/native-bundle-main.js",
+				"${PODS_ROOT}/WeexSDK/ios/sdk/WeexSDK/Resources/wx_load_error@3x.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/native-bundle-main.js",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wx_load_error@3x.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weexNative/Pods-weexNative-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F8FC3547D23EA90F194D98A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-weexNative-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7E9B7E155A6C548F0DC5341 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weexNative/Pods-weexNative-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8EA106A0206203600005D6FE /* Sources */ = {
@@ -145,6 +250,8 @@
 				8EA106AC206203620005D6FE /* ViewController.m in Sources */,
 				8EA106B7206203620005D6FE /* main.m in Sources */,
 				8EA106A9206203610005D6FE /* AppDelegate.m in Sources */,
+				8EA106C42062230A0005D6FE /* SAJImageLoader.m in Sources */,
+				8EA106C72062486E0005D6FE /* SAJEventModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,29 +383,36 @@
 		};
 		8EA106BB206203620005D6FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6775157DA1FC4441FAAD9CF2 /* Pods-weexNative.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H74HZZPS97;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = EBGUP9F96F;
 				INFOPLIST_FILE = weexNative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TianAn.weexNative;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tianan.weex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE = "7bd38990-006c-4e28-a9e0-85fdaaca0e2b";
+				PROVISIONING_PROFILE_SPECIFIER = TiananDev20170911;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8EA106BC206203620005D6FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88920B4F5FFCD03379EC2275 /* Pods-weexNative.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H74HZZPS97;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = weexNative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TianAn.weexNative;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tianan.weex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
